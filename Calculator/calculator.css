@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    max-width: 300px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#output {
+    width: 90%;
+    padding: 10px;
+    font-size: 24px;
+    /* text-align: right; */
+}
+
+.numberContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.numberContainer button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.numberContainer button:hover {
+    background-color: #ccc;
+}
+
+.operators {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.operators button {
+    width: 100%;
+    padding: 18px;
+    font-size: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.operators button:hover {
+    background-color: #45a049;
+}
+
+.operators button:last-child {
+    background-color: #f44336;
+}
+
+.operators button:last-child:hover {
+    background-color: #d32f2f;
+}
+
+.operators button:nth-last-child(2){
+    background-color: #f44336;
+}
+
+.operators button:nth-last-child(2):hover {
+    background-color: #d32f2f;
+}
+.operators button:nth-last-child(3){
+    background-color: #087fb1;
+}
+
+.operators button:nth-last-child(3):hover {
+    background-color: #4e9ed4;
+}

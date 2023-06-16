@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        
+        <input type="text" value="0" id = "output" >
+    <div class="numberContainer">
+        <button onclick="write_num(1)">1</button>
+        <button onclick="write_num(2)">2</button>
+        <button onclick="write_num(3)">3</button>
+        <button onclick="write_num(4)">4</button>
+        <button onclick="write_num(5)">5</button>
+        <button onclick="write_num(6)">6</button>
+        <button onclick="write_num(7)">7</button>
+        <button onclick="write_num(8)">8</button>
+        <button onclick="write_num(9)">9</button>
+    </div>
+    <div class ="operators">
+        <button onclick="write_operator('+')">+</button>
+        <button onclick="write_operator('-')">-</button>
+        <button onclick="write_operator('*')">*</button>
+        <button onclick="write_operator('/')">/</button>
+        <button onclick="write_operator('%')">%</button>
+        <button onclick="write_operator('(')">(</button>
+        <button onclick="write_operator(')')">)</button>
+        <button onclick="evaluate_expression()">=</button>
+        <button onclick="delete_last()">DEL</button>
+        <button onclick="clear_screen()">C</button>
+    </div>
+</div>
+
+</body>
+<script src="calculator.js"></script>
+</html>
