@@ -1,0 +1,69 @@
+body {
+  background-color: #222;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#clock {
+  color: #fff;
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options .option {
+  display: flex;
+  align-items: center;
+  color: #808080;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.options .option:hover {
+  color: #fff;
+}
+
+.options .option .opt {
+  width: 1rem;
+  height: 1rem;
+  background: #d9d9d9;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.options input[type="radio"] {
+  display: none;
+}
+
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2 {
+  color: #fff;
+}
+
+#option-1:checked ~ .option-1 .opt,
+#option-2:checked ~ .option-2 .opt {
+  background: rgba(0, 0, 63, 255);
+}
+
+#option-1:checked ~ .option-1 .opt::before,
+#option-2:checked ~ .option-2 .opt::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#option-1:checked ~ .option-1 span,
+#option-2:checked ~ .option-2 span {
+  color: #fff;
+}
